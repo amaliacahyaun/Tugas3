@@ -19,8 +19,8 @@ public class AnotherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_another);
-
-        ActionBar actionBar = getSupportActionBar();
+//
+//        ActionBar actionBar = getSupportActionBar();
 
         mNamaN = findViewById(R.id.negara);
         mDetN = findViewById(R.id.detail);
@@ -30,14 +30,14 @@ public class AnotherActivity extends AppCompatActivity {
 
         String mNama = intent.getStringExtra("iNama");
         String mDetail = intent.getStringExtra("iDetail");
-        byte[] mBytes = getIntent().getByteArrayExtra("iImage");
+        int bitmap = getIntent().getIntExtra("iImage", 0);
 
-        Bitmap bitmap = BitmapFactory.decodeByteArray(mBytes, 0, mBytes.length);
+        //Bitmap bitmap = BitmapFactory.decodeByteArray(mBytes, 0, mBytes.length);
 
-        actionBar.setTitle(mNama);
+//        actionBar.setTitle(mNama);
 
         mNamaN.setText(mNama);
         mDetN.setText(mDetail);
-        mImBendera.setImageBitmap(bitmap);
+        mImBendera.setImageResource(bitmap);
     }
 }
