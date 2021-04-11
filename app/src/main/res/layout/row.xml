@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/cardview_light_background">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:id="@+id/benderaN"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/namaN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/benderaN"
+            android:layout_toRightOf="@+id/benderaN"
+            android:text="Nama Negara"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namaN"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/benderaN"
+            android:layout_toRightOf="@+id/benderaN"
+            android:text="DETAIL"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:id="@+id/detailN"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
